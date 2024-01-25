@@ -1,6 +1,6 @@
 function wordDecrypt() {
-  const resulteElement = document.getElementById("resultado");
-  let encryptedWord = resulteElement.innerText;
+  const resultElement = document.getElementById("resultado");
+  let encryptedWord = resultElement.innerText;
 
   let decryptedWord = encryptedWord.replace("Texto Criptografado:\n", "");
   decryptedWord = decryptedWord.replace(/enter/g, "e");
@@ -10,6 +10,6 @@ function wordDecrypt() {
   decryptedWord = decryptedWord.replace(/ufat/g, "u");
 
   console.log(encryptedWord);
-  resulteElement.innerText = "Texto Descriptografado:\n" + decryptedWord;
+  resultElement.innerText = "Texto Descriptografado:\n" + decryptedWord;
   return decryptedWord;
 }

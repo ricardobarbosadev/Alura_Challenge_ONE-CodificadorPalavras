@@ -4,24 +4,41 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+
+    <title>Criptografia</title>
+    <link rel="icon" type="image/x-icon" href="./imgs/cryptography.png" />
   </head>
   <body>
-    <h1>Criptografia e Descriptografia</h1>
+    <header>
+      <img src="./imgs/cryptography.png" alt="Logo" />
+      <h2>Criptografia e Descriptografia</h2>
+    </header>
 
-    <label for="texto">Texto:</label><br />
-    <textarea id="texto"></textarea><br />
-
-    <button onclick="wordEncrypt()">Criptografar</button>
-    <button onclick="wordDecrypt()">Descriptografar</button>
-
-    <div id="resultado"></div>
-
+    <main class="flex-container">
+      <div class="column">
+        <textarea
+          id="texto"
+          placeholder="Escreve o texto para criptografar"
+        ></textarea>
+      </div>
+      <div class="column">
+        <div id="resultado">
+          <img src="./imgs/img_lupa.jpg" alt="" srcset="" />
+        </div>
+      </div>
+    </main>
+    <div class="button-row">
+      <button onclick="wordEncrypt()">Criptografar</button>
+      <button onclick="wordDecrypt()">Descriptografar</button>
+    </div>
     <footer>
       Desenvolvido por Ricardo Barbosa &copy; <span id="year"></span>
     </footer>
 
     <script defer src="./encrypt.js"></script>
     <script defer src="./decrypt.js"></script>
+    <script>
+      document.getElementById("year").innerText = new Date().getFullYear();
+    </script>
   </body>
 </html>
