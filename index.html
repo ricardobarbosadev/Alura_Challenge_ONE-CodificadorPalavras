@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,23 +14,29 @@
       <h2>Criptografia e Descriptografia</h2>
     </header>
 
-    <main class="flex-container">
-      <div class="column">
-        <textarea
-          id="texto"
-          placeholder="Escreve o texto para criptografar"
-        ></textarea>
+    <main>
+      <div class="flex-container">
+        <div class="column">
+          <textarea
+            id="texto"
+            placeholder="Escreve o texto para criptografar"
+          ></textarea>
+        </div>
+        <div class="column">
+          <div id="resultado">
+            <img src="./imgs/img_lupa.jpg" alt="" srcset="" />
+          </div>
+        </div>
       </div>
-      <div class="column">
-        <div id="resultado">
-          <img src="./imgs/img_lupa.jpg" alt="" srcset="" />
+
+      <div class="flex-container">
+        <div class="button-row">
+          <button onclick="wordEncrypt()">Criptografar</button>
+          <button onclick="wordDecrypt()">Descriptografar</button>
         </div>
       </div>
     </main>
-    <div class="button-row">
-      <button onclick="wordEncrypt()">Criptografar</button>
-      <button onclick="wordDecrypt()">Descriptografar</button>
-    </div>
+
     <footer>
       Desenvolvido por Ricardo Barbosa &copy; <span id="year"></span>
     </footer>
