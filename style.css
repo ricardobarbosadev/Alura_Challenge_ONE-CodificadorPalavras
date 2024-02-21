@@ -4,6 +4,7 @@
 }
 
 body {
+  height: 100vh;
   background-image: url("./imgs/img_lupa.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -11,15 +12,14 @@ body {
   background-size: 100vh;
   background-color: #555555;
   font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
+  
 }
 
 header {
   background-color: #555555;
   color: #F2F2F2;
-  padding: 10px;
+  padding: 2px;
   text-align: center;
 }
 
@@ -27,61 +27,54 @@ header img {
   max-width: 100px;
 }
 
-/*main {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  width: 70%; 
-  height: 80%;
-  margin-top: 10%;
-  margin-bottom: 10%;
-  margin-left: 15%;
-  margin-right: 15%;
-  padding: 0; 
-}*/
 
-.flex-container{
+.container{
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
-  width: 70%; 
-  height: 80%;
-  margin-top: 10%;
-  margin-bottom: 10%;
-  margin-left: 15%;
-  margin-right: 15%;
-  padding: 0; 
+  align-items: center;
+  margin: 5%;
+  gap: 10px 20px;
+  flex-wrap: wrap;
+}
+
+.container__text{
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10%;
+  width: 615px;
+  
 }
 
 #texto {
+  background: transparent ;
   width: 300px;
   height: 500px;
-  background-color: #777777;
-
-  box-sizing: border-box;
-
+  box-sizing: content-box;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(6.4px);
+  border: 1px solid #777777;
 }
 
-#text::placeholder{
-  color: #333333;
-  font-size: large;
-  opacity: 1;
-}
 
 
 
 #resultado {
-  width: 300px;
-  height: 500px;
-  box-sizing: content-box;
-  border: 1px solid #ccc;
+width: 300px;
+height: 500px;
+box-sizing: content-box;
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(6.4px);
+-webkit-backdrop-filter: blur(6.4px);
+border: 1px solid #777777;
 }
 
-#resultado img{
-  width: 300px;
-  height: 500px;
-}
 
 .button-row {
   display: flex;
@@ -90,9 +83,7 @@ header img {
   justify-content: space-around;
   width: 50%;
   margin-left: 25%;
-  margin-right: 25%;
-  margin-top: 5px;
-  margin-bottom: 300px;
+  margin-right: 25%; 
 }
 
 button {
@@ -130,7 +121,7 @@ footer {
   color: #F2F2F2;
   text-align: center;
   padding: 10px;
-  position: relative;
+  position: fixed;
   bottom: 0;
   width: 100%;
 }
