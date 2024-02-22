@@ -10,7 +10,9 @@ function wordEncrypt() {
   encryptedWord = encryptedWord.replace(/o/g, "ober");
   encryptedWord = encryptedWord.replace(/u/g, "ufat");
 
-  resulteElement.innerText = "Texto Criptografado:\n" + encryptedWord;
+  resulteElement.innerHTML =
+    "<span class='encrypted-label'>Texto Criptografado:</span><br> <br>" +
+    encryptedWord;
 
   textElement.value = "";
   return encryptedWord;

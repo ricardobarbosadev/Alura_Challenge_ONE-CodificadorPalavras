@@ -12,7 +12,9 @@ function wordDecrypt() {
   decryptedWord = decryptedWord.replace(/ufat/g, "u");
   decryptedWord = decryptedWord.replace("Texto Descriptografado:\n", "");
 
-  resultElement.innerText = "Texto Descriptografado:\n" + decryptedWord;
+  resultElement.innerHTML =
+    "<span class='encrypted-label'>Texto Decriptografado:</span><br> <br>" +
+    decryptedWord;
   console.log(decryptedWord);
   return decryptedWord;
 }
