@@ -11,7 +11,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center; 
-  background-size: 100vh;
+  background-size: cover;
   background-color: #555555;
   font-family: Arial, sans-serif;
   box-sizing: border-box;
@@ -178,3 +178,22 @@ footer {
  }
 
 
+ @media only screen and (max-width: 600px) {
+  .container {
+    gap: 30px 10px;
+  }
+  
+  .container__text {
+    flex-direction: column;
+    gap: 20px;
+    max-width: 100%;
+    width: 90%;
+  }
+  
+  #texto,
+  #resultado {
+    width: 100%;
+    max-width: none;
+    height: auto;
+  }
+}
