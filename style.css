@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Barriecito&family=Kode+Mono:wght@400..700&display=swap');
 
+:root{
+  --primary-color: #781D42;
+  --secondary-color: #A3423C;
+  --terciary-color: #DE834D;
+  --fourth-color: #F0D290;
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -12,7 +19,7 @@ body {
   background-attachment: fixed;
   background-position: center; 
   background-size: cover;
-  background-color: #555555;
+  background-color: var(--primary-color);
   font-family: Arial, sans-serif;
   box-sizing: border-box;
 }
@@ -22,12 +29,12 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #555555;
+  background-color: var(--primary-color);
   font-family: "Barriecito", system-ui;
   font-size: 30px;
   font-style: normal;
   font-weight: 500;
-  color: #F2F2F2;
+  color: var(--fourth-color);
   padding: 2px;
   text-align: center;
 }
@@ -38,9 +45,9 @@ header img {
 
 
 .container{
-  width: 90%; /* Defina a largura desejada */
-  max-width: 800px; /* Defina a largura máxima se desejar */
-  margin: 7% auto; /* Define as margens automáticas para centralizar */
+  width: 90%;
+  max-width: 800px;
+  margin: 7% auto; 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -66,22 +73,22 @@ header img {
   height: 500px;
   box-sizing: content-box;
   border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 30px  var(--fourth-color);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(6.4px);
-  border: 1px solid #777777;
+  border: 1px solid var(--terciary-color);
   padding: 10px;
   font-family: "Kode Mono", monospace;
   font-optical-sizing: auto;
   font-weight: bold;
   font-style: normal;
   font-size: 20px;
-  color: #F2F2F2;
+  color: var(--primary-color)
 }
 
 textarea::placeholder {
-  font-family:  'Roboto', sans-serif, #F2F2F2 ;
-  color: #333333;
+  font-family:  'Roboto', sans-serif, var(--fourth-color) ;
+  color: var(--secondary-color);
   font-weight: lighter;
   font-size: 20px;
   padding: 10px;
@@ -94,22 +101,22 @@ width: 300px;
 height: 500px;
 box-sizing: content-box;
 border-radius: 16px;
-box-shadow: 0 4px 40px rgba(0, 0, 0, 0.1);
+box-shadow: 0 4px 40px  var(--fourth-color);
 backdrop-filter: blur(6.4px);
 -webkit-backdrop-filter: blur(6.4px);
-border: 1px solid #777777;
+border: 1px solid var(--terciary-color);
 padding: 10px;
-  font-family: "Kode Mono", monospace;
-  font-optical-sizing: auto;
-  font-weight: bold;
-  font-style: normal;
-  font-size: 20px;
-  color: #F2F2F2;
+font-family: "Kode Mono", monospace;
+font-optical-sizing: auto;
+font-weight: bold;
+font-style: normal;
+font-size: 20px;
+color: var(--primary-color);
 }
 
 .encrypted-label {
   font-weight: bold;
-  color: #333333;
+  color: var(--secondary-color);
   font-size: 25px;
 }
 
@@ -127,13 +134,12 @@ button {
 font-family: Bebas Neue;
 font-weight: bolder;
 font-size: 20px;
-color: #333333;
+color: var(--secondary-color);
 background-color: transparent;
 backdrop-filter: blur(15px);
 -webkit-backdrop-filter: blur(15px);
-border: 1px solid #777777;
+border: 1px solid var(--terciary-color);
 padding: 10px 30px;
-border: 1px solid #777777;
 box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
 border-radius: 50px;
 transition : 1000ms;
@@ -149,9 +155,9 @@ button:hover{
 transition : 1000ms;
 padding: 10px 50px;
 transform : translateY(-0px);
-background: linear-gradient(90deg, #333333 0%, #999999 100%);
-color: #F2F2F2;
-border: solid 2px #333333;
+background: linear-gradient(90deg, var(--secondary-color) 0%, #999999 100%);
+color:var(--fourth-color);
+border: solid 2px var(--secondary-color);
 }
 
 
@@ -164,8 +170,8 @@ footer {
   gap: 10px;
   font-weight: bold;
   align-items: center;
-  background-color: #555555;
-  color: #F2F2F2;
+  background-color: var(--primary-color);
+  color:var(--fourth-color);
   text-align: center;
   padding: 10px;
   position: fixed;
@@ -173,8 +179,16 @@ footer {
   width: 100%;
   height:  40px;
 }
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 8%;
+}
+
  i{
-  color: #F2F2F2;
+  color:var(--fourth-color);
  }
 
 

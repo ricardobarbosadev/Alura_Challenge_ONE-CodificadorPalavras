@@ -15,6 +15,5 @@ function wordDecrypt() {
   resultElement.innerHTML =
     "<span class='encrypted-label'>Texto Decriptografado:</span><br> <br>" +
     decryptedWord;
-  console.log(decryptedWord);
   return decryptedWord;
 }
