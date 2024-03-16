@@ -15,5 +15,7 @@ function wordEncrypt() {
     encryptedWord;
 
   textElement.value = "";
+
+  document.getElementById("copyButton").disabled = false;
   return encryptedWord;
 }

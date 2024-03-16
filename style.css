@@ -14,7 +14,7 @@
 
 body {
   height: 100vh;
-  background-image: url("./imgs/img_lupa.jpg");
+ /*background-image: url("./imgs/img_lupa.jpg");*/
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center; 
@@ -29,9 +29,10 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--primary-color);
+  flex-shrink: inherit;
+  background-color: var(--terciary-color);
   font-family: "Barriecito", system-ui;
-  font-size: 30px;
+  font-size: 1.87rem;
   font-style: normal;
   font-weight: 500;
   color: var(--fourth-color);
@@ -82,15 +83,15 @@ header img {
   font-optical-sizing: auto;
   font-weight: bold;
   font-style: normal;
-  font-size: 20px;
-  color: var(--primary-color)
+  font-size: 1.25rem;
+  color: var(--secondary-color);
 }
 
 textarea::placeholder {
   font-family:  'Roboto', sans-serif, var(--fourth-color) ;
   color: var(--secondary-color);
   font-weight: lighter;
-  font-size: 20px;
+  font-size: 1.25rem;
   padding: 10px;
  }
 
@@ -110,14 +111,14 @@ font-family: "Kode Mono", monospace;
 font-optical-sizing: auto;
 font-weight: bold;
 font-style: normal;
-font-size: 20px;
-color: var(--primary-color);
+font-size: 1.25rem;
+color:  var(--fourth-color);
 }
 
 .encrypted-label {
   font-weight: bold;
   color: var(--secondary-color);
-  font-size: 25px;
+  font-size: 1.56rem;
 }
 
 .button-row {
@@ -133,7 +134,7 @@ color: var(--primary-color);
 button {
 font-family: Bebas Neue;
 font-weight: bolder;
-font-size: 20px;
+font-size: 1.25rem;
 color: var(--secondary-color);
 background-color: transparent;
 backdrop-filter: blur(15px);
@@ -170,7 +171,7 @@ footer {
   gap: 10px;
   font-weight: bold;
   align-items: center;
-  background-color: var(--primary-color);
+  background-color: var(--terciary-color);
   color:var(--fourth-color);
   text-align: center;
   padding: 10px;
